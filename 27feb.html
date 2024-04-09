@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Description</title>
+</head>
+
+<body>
+    <label for="radiusInput">Enter the radius of the circle:</label>
+    <input type="number" id="radiusInput">
+    <button onclick="calculateArea()">Calculate Area</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateArea() {
+            // Step 1: Get the value of the input element
+            var radius = document.getElementById('radiusInput').value;
+
+            // Step 2: Calculate the area
+            var area = Math.PI * Math.pow(radius, 2);
+
+            // Step 3: Display the result
+            document.getElementById('result').innerText = 'The area of the circle is: ' + area.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
+<!----write a script of describing aa cirlce  step 1: create a label 
+step 2: create  a scope of label, use id to target the element. 
+step 3 : create a button with on click behaviour that has a functionality of calculating area. 
+script : create a function, a variable, get the value of element taken in the second step.
+ calculate aarea, */
+> 

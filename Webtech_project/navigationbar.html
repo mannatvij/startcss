@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+    *{
+        text-decoration: none;
+    }
+    .Navigation-bar{
+       
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #DEDAF4;
+    }
+    .Navigation-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+    li a{
+        margin-right: 25px;
+        font-size: 25px;
+    }
+    .hero{
+         background: url(hero2.jpg);
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        color: rgb(28, 40, 3);
+        text-align: center;
+        padding-top: 200px;
+
+        
+    }
+    .hero h1{
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .hero p{
+        font-weight: 900;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .search-box{
+        max-width: 550px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-box input{
+        width:70%;
+        padding:10px;
+        outline: none;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        font-size: 1rem;
+
+    }
+    .search-box button{
+        padding:10px;
+        outline: none;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+    .recipes{
+        padding: 50px 0;
+    }
+
+    .recipes h1{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: blue;
+    }
+    .recipe-section{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        column-gap: 4px;
+    }
+    .recipe-card{
+        background: #EADBDB;
+        margin: 30px ;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        overflow: hidden;
+        box-shadow: 0 1px 4px;
+
+    }
+    .recipe-card img{
+        width: 100%;
+        height: 70%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        object-fit: cover;
+    }
+    .recipe-card h2{
+        font-size: 25px;
+        text-align: center;
+        padding: 10px 20px;
+        
+    }
+    .recipe-card a{
+        font-size: 22px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        background:#AEC6CF;
+        color: brown;
+        height: 30px;
+        padding: 15px 0;
+        cursor: pointer;
+    
+    }
+    .recipe-card h2{
+        text-align: center;
+        font-size: 22px;
+    
+    }
+    footer{
+        background : darkslategray;
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="Navigation-bar">
+        <div class="Navigation-container">
+        <img src="Recipe_Radar.png" width="200px" height="100px">
+       
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+            <button><a href="#"> Sign In</a></button>
+            <button><a href="#"> Sign up</a></button>
+        </ul>
+         </div>
+    </nav>
+    <section class="hero"> 
+        <div class="hero-section">
+            <h1> Your's recipe Radar!</h1>
+            <p> Here's some mouth watering recipes for all your cravings!</p>
+          <form action="#" class="search-box"> 
+          <input type="text" placeholder="Search Recipe">
+          <button type="submit">Search</button> 
+          </form>
+        </div>
+    </section>
+    <!---recipe section------>
+    <section class="recipes">
+        <h1> A few Famous Recipes</h1>
+        <div class="recipe-section">
+            <div class="recipe-card">
+             <img width="400" height="400" src="biryani1.jpg"> 
+             <h2>Veg Biryani </h2>  
+             <a href="#"> View Recipe </a>
+            </div>
+            <div class="recipe-card">
+                <img width="400" height="400" src="dal-fry-recipe.jpg">
+                <h2>Dal Fry </h2>
+                <a href="#"> View Recipe </a>
+            </div>
+        
+            <div class="recipe-card">
+                <img width="400" height="400" src="chaat.jpg">
+                <h2> Chaat Chaska!</h2>
+                <a href="#"> View Recipe </a>
+            </div>
+            <div class="recipe-card">
+                <img width="400" height="400" src="rolls.jpg">
+                <h2> Veg roll </h2>
+                <a href="#"> View Recipe </a>
+        </div>
+            <div class="recipe-card">
+                <img width="400" height="400" src="images (2).jpeg">
+                <h2> Paneer Masala </h2>
+                <a href="#"> View Recipe </a>
+            </div>
+        </div>
+        </section>
+   <footer> <div > <p> &copy; 2024 Recipe_Radar</p>
+</div>
+</footer>
+</body>
+</html>
